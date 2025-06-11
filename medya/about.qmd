@@ -5,9 +5,11 @@ about:
   template: jolla
   links:
     - icon: instagram
-      text: Insagram
+      text: Instagram
       href: https://www.instagram.com/halilyelkanat
- 
+    - icon: mail
+      text: halil.yelkanat@gmail.com
+      href: mailto:halil.yelkanat@gmail.com
 
 ---
 

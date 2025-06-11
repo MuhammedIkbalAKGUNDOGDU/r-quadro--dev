@@ -26,12 +26,16 @@ website:
       - icon: instagram
         href: https://www.instagram.com/halilyelkanat
         aria-label: Instagram
+      - icon: gmail
+        href: mailto:halil.yelkanat@gmail.com
 
   page-footer:
     left: "© 2025 [Halil Yelkanat] | YMİ-312 Projesi"
     right:
       - icon: instagram
         href: https://www.instagram.com/halilyelkanat
+      - icon: mail
+        href: mailto:halil.yelkanat@gmail.com
 
 format:
   html:
