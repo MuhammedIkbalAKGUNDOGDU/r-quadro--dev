@@ -1,0 +1,112 @@
+---
+title: "Yapay Zeka Yayınları Üzerine Veri Analizi ve Görselleştirme"
+author: "Halil Yelkanat"
+date: "2025-06-11"
+categories: [Veri Analizi, R, Yapay Zeka, Yeni Medya, STIX]
+image: "veri_gorseli_kapak.png"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    code-summary: "Kodu Göster"
+---
+
+## Giriş
+
+Bu gönderide, STIX platformu üzerinden sağlanan yapay zeka yayınlarına ait veri seti analiz edilmiştir. Analizlerde `R`, `tidyverse` ve `ggplot2` kütüphaneleri kullanılmıştır. Veri, Our World in Data platformundan online olarak çekilmiştir.
+
+---
+
+## Kütüphanelerin Yüklenmesi
+
+```{r}
+library(jsonlite)
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+```
+
+
+```{r}
+aiveri <- read.csv("https://ourworldindata.org/grapher/annual-scholarly-publications-on-artificial-intelligence.csv?v=1&csvType=full&useColumnShortNames=true") %>% 
+  mutate(tarih = make_date(year = Year)) %>% 
+  select(
+    ulke = Entity,
+    tarih,
+    yayın_sayısı = num_articles__field_all
+  )
+```
+## Kıtalara Göre Ortalama Yayın Sayısı
+
+Bu grafik, kıtaların yapay zeka alanında ortalama yayın üretim düzeylerini göstermektedir. Avrupa ve Asya gibi bölgelerin ortalamada yüksek seviyede yayın yaptığı görülmektedir. Bu tür bir analiz, kıtaların araştırma kapasitesine dair genel bir fikir verir.
+```{r}
+kita_ort <- aiveri %>%
+  filter(ulke %in% c("Asia", "Africa", "Europe", "North America", "South America", "Oceania")) %>%
+  group_by(ulke) %>%
+  summarise(ortalama_yayin = mean(yayın_sayısı, na.rm = TRUE))
+
+ggplot(kita_ort, aes(x = reorder(ulke, ortalama_yayin), y = ortalama_yayin)) +
+  geom_col(fill = "skyblue") +
+  coord_flip() +
+  labs(title = "Kıtalara Göre Ortalama Yayın Sayısı",
+       x = "Kıta", y = "Ortalama Yayın Sayısı") +
+  theme_minimal()
+```
+## Kıtalara Göre Maksimum Yayın Yoğunluğu
+
+Bu grafikte, her kıtanın bir yılda ulaştığı en yüksek yayın sayısı gösterilmektedir. Bu maksimum değerler, zaman içinde en yoğun araştırma yapılan yılları ve kıtaları vurgular.
+ 
+
+```{r}
+kita_max <- aiveri %>%
+  filter(ulke %in% c("Asia", "Africa", "Europe", "North America", "South America", "Oceania")) %>%
+  group_by(ulke) %>%
+  summarise(en_yuksek_yayin = max(yayın_sayısı, na.rm = TRUE))
+
+ggplot(kita_max, aes(x = reorder(ulke, en_yuksek_yayin), y = en_yuksek_yayin)) +
+  geom_col(fill = "orange") +
+  coord_flip() +
+  labs(title = "Kıtalara Göre En Yüksek Yayın Sayısı",
+       x = "Kıta", y = "Maksimum Yayın Sayısı") +
+  theme_minimal()
+```
+## Seçili Ülkelerde Zaman Serisi Analizi
+
+Türkiye, Çin, ABD, Almanya gibi ülkelerin zaman içinde yapay zeka yayınlarında gösterdiği eğilimler bu grafikte gösterilmektedir. Çin’in ve ABD’nin ivmeli artışı dikkat çekerken, diğer ülkelerde daha istikrarlı artışlar gözlemlenmektedir.
+```{r}
+
+secili_ulkeler <- c("Turkey", "Germany", "United States", "Russia", "China", "France")
+
+ggplot(aiveri %>% filter(ulke %in% secili_ulkeler),
+       aes(x = tarih, y = yayın_sayısı, color = ulke)) +
+  geom_line(size = 1.2) +
+  labs(title = "Seçili Ülkelerde Yıllara Göre Yapay Zeka Yayın Sayısı",
+       x = "Yıl", y = "Yayın Sayısı",
+       color = "Ülke") +
+  theme_minimal()
+```
+
+## 2022 Yılı Kıtasal Yayın Dağılımı
+
+Sadece 2022 yılı temel alınarak yapılan bu analizde, her kıtanın yapay zeka alanında ürettiği toplam yayın sayısı sunulmuştur. Güncel durumu özetlemek ve yıllık kıyaslama yapmak açısından önemlidir.
+
+
+
+```{r}
+kita_2022 <- aiveri %>%
+  filter(
+    ulke %in% c("Asia", "Africa", "Europe", "North America", "South America", "Oceania"),
+    tarih == as.Date("2022-01-01")
+  )
+
+ggplot(kita_2022, aes(x = reorder(ulke, yayın_sayısı), y = yayın_sayısı)) +
+  geom_col(fill = "seagreen") +
+  labs(title = "2022 Yılı Kıtalara Göre Yayın Sayısı",
+       x = "Kıta", y = "Yayın Sayısı") +
+  theme_minimal()
+```
+
+## Genel Değerlendirme
+Bu analiz sayesinde, yapay zeka alanında hangi bölgelerin ve ülkelerin daha fazla bilimsel üretim yaptığı ortaya konmuştur. Zaman serisi analizleri ile ülkelerin araştırma eğilimleri gözlemlenmiş, kıtalar arası karşılaştırmalar ile küresel dağılım hakkında fikir sahibi olunmuştur.

@@ -1,0 +1,14 @@
+---
+title: "Hakkımda"
+image: profile.jpeg
+about:
+  template: jolla
+  links:
+    - icon: instagram
+      text: Insagram
+      href: https://www.instagram.com/halilyelkanat
+ 
+
+---
+
+Merhaba ben Halil Yelkanat bu da benim Final Ödevim

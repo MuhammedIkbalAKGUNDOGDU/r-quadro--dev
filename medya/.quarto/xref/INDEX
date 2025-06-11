@@ -1,0 +1,32 @@
+{
+  "about.qmd": {
+    "about.html": "b56abc9f"
+  },
+  "index.qmd": {
+    "index.html": "4b1e827b"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "de4d3aad"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "e191b04c"
+  },
+  "posts/sosyal-medyanin-yukselisi/index.qmd": {
+    "index.html": "f32b3608"
+  },
+  "posts/dijital-reklamcilikta-trendler/index.qmd": {
+    "index.html": "a86c1080"
+  },
+  "posts/dijital-yalnizlik-ve-iletisim/index.qmd": {
+    "index.html": "e74eaf45"
+  },
+  "posts/yapay-zeka-ve-gazetecilik/index.qmd": {
+    "index.html": "852158db"
+  },
+  "posts/veri-analizi-ve-gorsellestirme/index.qmd": {
+    "index.html": "0858518a"
+  },
+  "posts/index.qmd": {
+    "index.html": "d9278705"
+  }
+}

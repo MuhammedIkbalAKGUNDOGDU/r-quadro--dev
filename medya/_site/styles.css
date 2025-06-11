@@ -1,0 +1,5 @@
+/* css styles */
+.navbar-brand img {
+  height: 50px;   /* varsayılan: 30px civarı */
+  max-height: 50px;
+}

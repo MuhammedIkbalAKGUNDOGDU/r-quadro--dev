@@ -1,0 +1,60 @@
+---
+title: "Sosyal Medyanın Evrimi: Geçmişten Günümüze Dijital Dönüşüm"
+author: "Halil Yelkanat"
+date: "2025-06-11"
+categories: [Sosyal Medya, Yeni Medya, Dijital Kültür]
+image: "cover.png"
+description: "Fevreka'nın içeriğine dayalı olarak sosyal medyanın tarihi gelişimi, dönüşüm noktaları ve bugünkü etkileri üzerine bir derleme."
+---
+
+## Giriş
+
+Bir zamanlar sadece arkadaşlarla iletişim kurmanın yolu olan sosyal medya, bugün bilgiye erişimden ticarete, eğlenceden siyasete kadar her alanda etkili bir mecra haline geldi. Bu yazıda, **Fevreka** tarafından derlenen bilgiler ışığında sosyal medyanın nasıl bu noktaya geldiğini, hangi evrelerden geçtiğini ve bugün toplumsal yaşamı nasıl şekillendirdiğini ele alacağız.
+
+---
+
+## 1. İlk Kıvılcımlar: Forumlar ve E-Posta Listeleri
+
+1980'lerin sonlarında ve 1990’ların başlarında ortaya çıkan ilk dijital topluluklar, BBS’ler (Bulletin Board Systems), e-posta grupları ve forum siteleriyle şekillenmeye başladı. Bu yapılar, insanların çevrimiçi ortamda fikir alışverişi yapabildiği ilk sosyal iletişim ağlarıydı.
+
+---
+
+## 2. MSN, ICQ, IRC: Anlık Mesajlaşma Dönemi
+
+1990’ların ortasında başlayan ve 2000’lerde zirve yapan **anlık mesajlaşma platformları**, çevrimiçi iletişimi daha samimi ve birebir hale getirdi. MSN Messenger, ICQ ve IRC gibi platformlar, sosyal iletişim alışkanlıklarını dijital düzleme taşıdı.
+
+---
+
+## 3. İlk Sosyal Ağlar: Friendster, MySpace ve Facebook
+
+2002 yılında kurulan Friendster, ardından gelen MySpace (2003) ve Facebook (2004) ile birlikte sosyal medya yepyeni bir boyut kazandı. Kullanıcı profilleri, arkadaş listeleri ve içerik paylaşımı kavramları bu dönemde hayatımıza girdi. Facebook’un "gerçek kimlik" temelli yapısı, sosyal medyada güven unsurunu da ön plana çıkardı.
+
+---
+
+## 4. Mobil Devrim ve Uygulama Tabanlı Sosyal Medya
+
+Akıllı telefonların yaygınlaşması, sosyal medya platformlarının kullanım şeklini kökten değiştirdi. Instagram, Snapchat ve TikTok gibi uygulamalar sayesinde kullanıcılar artık her an her yerden içerik üretebilir hale geldi. Bu durum, içerik tüketimini hızlandırırken etkileşim oranlarını da artırdı.
+
+---
+
+## 5. İçerik Ekonomisi ve Influencer Kültürü
+
+Günümüzde sosyal medya yalnızca sosyalleşme değil, aynı zamanda bir **geçim kaynağı** haline geldi. İçerik üreticileri, markalarla işbirliği yaparak gelir elde ediyor. YouTube içerik üreticilerinden Instagram influencer’larına kadar çok geniş bir dijital ekonomi oluştu.
+
+---
+
+## 6. Veri, Gizlilik ve Algoritmalar
+
+Sosyal medyanın evrimi, beraberinde veri gizliliği ve algoritma tartışmalarını da getirdi. Hangi içeriğin kime gösterileceğini belirleyen yapay zeka destekli algoritmalar, kullanıcı deneyimini şekillendirirken aynı zamanda bilgi balonlarına ve kutuplaşmalara da zemin hazırlayabiliyor.
+
+---
+
+## Sonuç: Geçmişi Bilmek, Geleceği Anlamak
+
+Sosyal medyanın bugünkü halini daha iyi kavrayabilmek için geçirdiği evreleri bilmek oldukça önemlidir. İletişim tarihinin dijital çağı olarak nitelendirilen bu dönem, teknolojik olduğu kadar toplumsal bir dönüşümü de ifade ediyor. Sosyal medyanın geleceği ise; etik veri kullanımı, dijital okuryazarlık ve platformların sosyal sorumluluk bilinciyle şekillenecek gibi görünüyor.
+
+---
+
+## Kaynak
+
+[Fevreka – *Bu Günlere Nasıl Geldik? Sosyal Medyanın Evrimi*](https://fevreka.com/bu-gunlere-nasil-geldik-sosyal-medyanin-evrimi/)

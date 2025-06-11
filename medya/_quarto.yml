@@ -1,0 +1,45 @@
+project:
+  type: website
+
+website:
+  title: "Yeni Medyada Kodlama Dersi – Final Ödevi"
+  navbar:
+    logo: "images/blog-logo.png"
+    left:
+      - href: index.qmd
+        text: Ana Sayfa
+      - text: Blog Yazıları
+        menu:
+          - text: Dijital Reklamcılıkta Trendler
+            href: posts/dijital-reklamcilikta-trendler/index.qmd
+          - text: Dijital Yalnızlık ve İletişim
+            href: posts/dijital-yalnizlik-ve-iletisim/index.qmd
+          - text: Sosyal Medyanın Yükselişi
+            href: posts/sosyal-medyanin-yukselisi/index.qmd
+          - text: Veri Analizi ve Görselleştirme
+            href: posts/veri-analizi-ve-gorsellestirme/index.qmd
+          - text: Yapay Zeka ve Gazetecilik
+            href: posts/yapay-zeka-ve-gazetecilik/index.qmd
+    right:
+      - href: about.qmd
+        text: Hakkımda
+      - icon: instagram
+        href: https://www.instagram.com/halilyelkanat
+        aria-label: Instagram
+
+  page-footer:
+    left: "© 2025 [Halil Yelkanat] | YMİ-312 Projesi"
+    right:
+      - icon: instagram
+        href: https://www.instagram.com/halilyelkanat
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-fold: true
+    code-copy: true
+    appearance: toggle

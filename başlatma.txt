@@ -1,0 +1,3 @@
+>>  quarto clean  
+>>  quarto render
+>>  quarto preview
